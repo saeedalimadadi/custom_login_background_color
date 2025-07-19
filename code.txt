@@ -1,0 +1,12 @@
+function custom_login_background_color() {
+    echo '
+    <style>
+        body.login #loginform {
+            background-color: #ffffff9c !important; /* رنگ پس‌زمینه فرم ورود */
+            border-radius: 8px; /* گوشه‌های گرد (اختیاری) */
+            padding: 20px; /* فاصله داخلی (اختیاری) */
+        }
+    </style>
+    ';
+}
+add_action( 'login_enqueue_scripts', 'custom_login_background_color' );
